@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>0312</title>
+		<style type="text/css">
+			td {
+				border: 1px solid black;
+				width: 150px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<h1>GuGuDan</h1>
+		<script type="text/javascript">
+			document.write("<table>");
+			for (var dan = 0; dan < 10; dan++) {
+				document.write("<tr>");
+				for (var col = 0; col < 10; col++) {
+					if (dan == 0 && col == 0) {
+						document.write("<td></td>");
+					} else if (dan == 0) {
+						document.write("<td>" + col + "</td>");
+					} else if (col == 0) {
+						document.write("<td>" + dan + " X </td>");
+					} else {
+						document.write("<td>" + dan + " X " + col + " = " + (dan * col) + "</td>");
+					}
+				}
+				document.write("</tr>");
+			}
+			document.write("</table>");
+		</script>
+	</body>
+</html>

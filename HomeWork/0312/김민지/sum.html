@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>0312</title>
+	</head>
+	<body>
+		<p>
+			<input type="text" id="a"> + 
+			<input type="text" id="b" > =
+			<label id="ans"> </label>
+		</p>
+		<input type="button" id="btn" value="계산하기" onclick="cal()">
+		<script type="text/javascript">
+			var a = document.querySelector("#a");
+			var b = document.querySelector("#b");
+			var ans = document.querySelector("#ans");
+			function cal() {
+				ans.innerHTML = eval(a.value) + eval(b.value);
+			}
+		</script>
+	</body>
+</html>
